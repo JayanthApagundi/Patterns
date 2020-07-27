@@ -7,11 +7,21 @@ int main()
    printf("Enter value of n \n");
    scanf("%d", &n);
 
+   printf("--------------------\n");
    //Generate's square
    for (int i = 0; i < n; i++)
    {
       for (int j = 0; j < n; j++)
          printf("* ");
+      printf("\n");
+   }
+   printf("--------------------\n");
+
+   //Generate's square form numbers
+   for (int i = 0; i < n; i++)
+   {
+      for (int j = 0; j < n; j++)
+         printf("%d ", j);
       printf("\n");
    }
    printf("--------------------\n");
@@ -23,7 +33,16 @@ int main()
          printf("* ");
       printf("\n");
    }
-   printf("-------------------\n");
+   printf("--------------------\n");
+
+   //Generate's inverted right angled triangle with numbers
+   for (int i = 1; i <= n; ++i)
+   {
+      for (int j = 1; j <= i; ++j)
+         printf("%d ", j);
+      printf("\n");
+   }
+   printf("--------------------\n");
 
    //Generate's right angled triangle
    for (int i = 0; i < n; i++)
@@ -32,9 +51,18 @@ int main()
          printf("* ");
       printf("\n");
    }
+   printf("--------------------\n");
+
+   //Generate's right angled triangle with numbers
+   for (int i = 1; i <= n; i++)
+   {
+      for (int j = 1; j <= i; j++)
+         printf("%d ", j);
+      printf("\n");
+   }
+   printf("--------------------\n");
 
    //Generates triangle attached to right side
-   printf("--------------------\n");
    for (int i = 0; i < n; i++)
    {
       for (int j = 0; j < i; j++)
@@ -47,5 +75,20 @@ int main()
          printf("* ");
       printf("\n");
    }
-   printf("----------------------\n");
+   printf("--------------------\n");
+
+   //Generates triangle attached to right side with numbers
+   for (int i = 1; i < n; i++)
+   {
+      for (int j = 1; j < i; j++)
+         printf("%d ", j);
+      printf("\n");
+   }
+   for (int i = 1; i < n; i++)
+   {
+      for (int j = i; j < n; j++)
+         printf("%d ", j);
+      printf("\n");
+   }
+   printf("--------------------\n");
 }

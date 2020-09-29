@@ -91,4 +91,36 @@ int main()
       printf("\n");
    }
    printf("----------------------\n");
+
+   // Generates traingle attached to the bottom
+   for (int i = 1; i <= n; i++)
+   {
+      for (int space = 1; space <= n - i; space++)
+      {
+         printf("   ");
+      }
+      for (int j = 1; j <= i * 2 - 1; j++)
+      {
+         printf(" * ");
+      }
+
+      printf("\n");
+   }
+    printf("----------------------\n");
+
+   // Generates a upper traingle top
+   for (int i = n; i >= 1; i--)
+   {
+      for (int space = n - i; space >= 1; space--)
+      {
+         printf("   ");
+      }
+
+      for (int j = i * 2 - 1; j >= 1; j--)
+      {
+         printf(" * ");
+      }
+
+      printf("\n");
+   }
 }
